@@ -1,0 +1,118 @@
+.advantage{
+    padding-top: 98px;
+    padding-bottom: 117px;
+    background: linear-gradient(90deg, #FEE6ED 1.53%, #FFFCEE 11.02%, #DDECEF 97.47%);
+    position: relative;
+    overflow: hidden;
+    .advantage-img{
+        left: calc(50% - 530px);
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        max-width: 340px;
+    }
+    .btn-place{
+        margin-top: 1px;
+    }
+    .content{
+        text-align: right;
+        max-width: 1100px;
+        .box{
+            max-width: 518px;
+            width: 100%;
+            display: inline-block;
+            text-align: left;
+            h2{
+                margin-bottom: 17px;
+            }
+            p{
+                font-family: General Sans Variable;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 450;
+                line-height: 28px; /* 155.556% */
+                max-width: 575px;
+            }
+            .list{
+                margin-top: 35px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                li{
+                    min-height: 54px;
+                    margin-bottom: 5px;
+                    min-width: 225px;
+                    .list-icon2{
+                        top: -4px;
+                        transform: unset
+                    }
+                    p{
+                        font-family: General Sans Variable;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 550;
+                        line-height: 24px; /* 150% */
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1000px){
+    .advantage .advantage-img{
+        max-width: 350px;
+        left: 0;
+    }
+}
+@media(max-width: 850px){
+    .advantage{
+        padding-bottom: 0;
+        background: linear-gradient(180deg, #FEE6ED 1.53%, #FFFCEE 46.5%, #DDECEF 97.47%);
+    }
+    .advantage .content{
+        text-align: center;
+    }
+    .advantage .advantage-img{
+        position: relative;
+        margin: auto;
+        display: block;
+        margin-top: 64px;
+        transform: unset;
+        top: unset;
+        max-width: 320px;
+        margin-bottom: -130px;
+    }
+    .advantage .content .box p{
+        text-align: center;
+    }
+    .advantage .content .box h2{
+        text-align: center;
+    }
+    .advantage .content .box ul p{
+        text-align: left;
+    }
+    .advantage .btn-place{
+        text-align: center;
+    }
+}
+
+@media(max-width: 550px){
+    .advantage{
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+    .advantage .content .box .list{
+        flex-direction: column;
+        li{
+            width: 100%;
+            min-height: unset;
+            margin-bottom: 25px;
+            br{
+                display: none;
+            }
+        }
+    }
+    .advantage .advantage-img{
+        max-width: 100%;
+    }
+}

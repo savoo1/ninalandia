@@ -1,0 +1,51 @@
+.primary-input{
+    color: #000;
+    font-family: Alliance No;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 176.471% */
+
+    border-radius: 8px;
+    background: #FFF;
+
+    padding: 17px 20px 19px;
+    border: 0;
+    width: 100%;
+    transition: all ease 0.25s;
+}
+.primary-input::placeholder{
+    color: #000;
+    transition: all ease 0.25s;
+}
+.primary-input:focus::placeholder{
+    color: #fff;
+}
+.submit-website{
+    position: relative;
+    max-width: 427px;
+    .primary-input{
+        padding-right: 200px;
+    }
+    .primary-button{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+@media(max-width: 550px){
+    .primary-input{
+        font-size: 12px;
+        line-height: 19px;
+    }
+    .submit-website .primary-input{
+        padding-right: 100px;
+    }
+    .submit-website .primary-button{
+        font-size: 16px;
+        padding: 0;
+        min-width: 99px;
+    }
+}

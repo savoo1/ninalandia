@@ -1,0 +1,32 @@
+.list{
+    list-style-type: none;
+    li{
+        padding-left: 42px;
+        position: relative;
+        margin-bottom: 20px;
+        p{
+            font-family: General Sans Variable;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px; /* 155.556% */
+        }
+        .list-icon{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-top: -2px;
+        }
+        .list-icon2{
+            position: absolute;
+            left: -2px;
+            top: 50%;
+            transform: translateY(-50%);
+            margin-top: 2px;
+        }
+    }
+    li:last-child{
+        margin-bottom: 0;
+    }
+}

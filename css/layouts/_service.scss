@@ -1,0 +1,101 @@
+.service {
+  padding-top: 59px;
+  padding-bottom: 117px;
+  position: relative;
+  // overflow: hidden;
+  h2,
+  p {
+    text-align: center;
+  }
+  p {
+    max-width: 625px;
+    margin: auto;
+  }
+  .all-services {
+    margin-top: 59px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    position: relative;
+    .left-eclipse {
+      position: absolute;
+      z-index: -1;
+      filter: blur(170px);
+      top: 50%;
+      left: 0px;
+      transform: translateY(-50%);
+      width: 604px;
+      height: 604px;
+      border-radius: 604px;
+      background: #d5e7ee;
+    }
+    .right-eclipse {
+      position: absolute;
+      z-index: -1;
+      filter: blur(170px);
+      top: 50%;
+      right: 0px;
+      transform: translateY(-50%);
+      width: 604px;
+      height: 604px;
+      border-radius: 604px;
+      background: #eee9cd;
+    }
+  }
+  .btn-place {
+    text-align: center;
+    margin-bottom: 180px;
+  }
+  .table {
+    margin: auto;
+    margin-top: 59px;
+  }
+}
+@media(max-width: 1000px){
+  .table th .table-top-title{
+    width: 100px;
+  }
+  .service .all-services .left-eclipse{
+    max-width: 100%;
+    opacity: 0.3;
+    top: 0;
+  }
+  .service .all-services .right-eclipse{
+    opacity: 0.3;
+    max-width: 100%;
+  }
+  .service .btn-place{
+    margin-bottom: 50px;
+  }
+}
+@media(max-width: 550px){
+  .service .all-services{
+    gap: 16px;
+    margin-top: 32px;
+    margin-bottom: 54px;
+  }
+  .service .btn-place{
+    margin-bottom: 121px;
+    a{
+      width: 100%;
+    }
+  }
+  .table th .table-top-title{
+    width: 58px;
+  }
+  .table{
+    overflow: auto;
+    margin-top: 65px !important;
+  }
+  .table th .table-top-title{
+    width: 58px;
+    font-size: 8px;
+  }
+  .service{
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}

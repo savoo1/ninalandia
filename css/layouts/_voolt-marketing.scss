@@ -1,0 +1,131 @@
+.voolt-marketing{
+    padding-top: 50px;
+    padding-bottom: 143px;
+    position: relative;
+    overflow: hidden;
+    .voolt-marketing-img{
+        left: calc(50% - 600px);
+        top: 30px;
+        position: absolute;
+        max-width: 597px;
+    }
+    .btn-place{
+        margin-top: 32px;
+    }
+    .content{
+        text-align: right;
+        max-width: 1150px;
+        .box{
+            max-width: 520px;
+            width: 100%;
+            display: inline-block;
+            text-align: left;
+            h2{
+                margin-bottom: 16px;
+            }
+            p{
+                font-family: General Sans Variable;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 450;
+                line-height: 28px; /* 155.556% */
+                max-width: 469px;
+                margin-bottom: 18px;
+            }
+            .list{
+                margin-top: 65px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                li{
+                    min-height: 54px;
+                    margin-bottom: 20px;
+                    width: 50%;
+                    .list-icon2{
+                        top: -8px;
+                        transform: unset
+                    }
+                    p{
+                        color: #000;
+                        font-family: General Sans Variable;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px){
+    .voolt-marketing .voolt-marketing-img {
+        left: 15px;
+        top: 80px;
+        position: absolute;
+        max-width: 470px;
+    }
+}
+@media(max-width: 1050px){
+    .voolt-marketing{
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .voolt-marketing .voolt-marketing-img {
+        max-width: calc(100% - 600px);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+@media(max-width: 900px){
+    .voolt-marketing .voolt-marketing-img {
+        max-width: unset;
+        top:unset;
+        right: unset;
+        left: unset;
+        transform: unset;
+        position: relative;
+        margin: auto;
+        display: block;
+        margin-top: 50px;
+        max-width: 500px;
+        width: 100%;
+    }
+    .voolt-marketing .content .box{
+        max-width: 100%;
+    }
+    .voolt-marketing .content .box p{
+        margin: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .voolt-marketing .content .box h2{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .voolt-marketing .content .box .list{
+        text-align: left;
+        flex-direction: column;
+        max-width: 473px;
+        margin: auto;
+        margin-top: 20px;
+        li{
+            width: 100%;
+            min-height: unset;
+        }
+        p{
+            text-align: left;
+            min-height: unset;
+            br{
+                display: none;
+            }
+        }
+    }
+    .voolt-marketing .btn-place{
+        text-align: center;
+    }
+    .voolt-marketing .content .box .list li .list-icon2{
+        top: 2px;
+    }
+}

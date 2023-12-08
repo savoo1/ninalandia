@@ -1,0 +1,55 @@
+//primary button
+.primary-button {
+  border-radius: 8px;
+  background: #EAC628;
+  border: 1px solid #EAC628;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: unset;
+
+  color: #000;
+  font-family: General Sans Variable;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 155.556% */
+  padding: 14px 28px;
+
+  transition: all ease 0.5s;
+  position: relative;
+  z-index: 9;
+}
+button{
+  cursor: pointer;
+}
+.primary-button--transparent{
+  background-color: transparent;
+  border-color: #000;
+}
+.primary-button--transparent:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.primary-button--bigger{
+  font-family: Euclid Circular A;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  padding: 14px 38px;
+}
+
+@media(max-width: 550px){
+  .primary-button--bigger{
+    font-family: Euclid Circular A;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 155.556% */
+    padding: 9px 27px;
+    line-height: 28px;
+    width: 100%;
+  }
+}

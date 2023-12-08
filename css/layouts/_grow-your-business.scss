@@ -1,0 +1,60 @@
+.grow-your-business{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 110px;
+    h2{
+        margin-bottom: 23px;
+        margin-bottom: 17px;
+    }
+    p{
+        max-width: 680px;
+        margin: auto;
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-bottom: 30px;
+        margin-top: 24px;
+        li{
+            margin-bottom: 20px;
+            .list-icon2{
+                top: -8px;
+                transform: unset
+            }
+            p{
+                color: #000;
+                font-family: General Sans Variable;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+@media(max-width: 550px){
+    .grow-your-business{
+        h2{
+            text-align: left;
+        }
+        p{
+            text-align: left;
+        }
+    }
+    .grow-your-business .list{
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 5px;
+        li{
+            width: 100%;
+        }
+    }
+    .grow-your-business{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}

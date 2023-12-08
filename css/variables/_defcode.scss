@@ -1,0 +1,108 @@
+// fonts
+@font-face {
+  font-family: BasierCircle;
+  src: url("../fonts/BasierCircle-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: BasierCircle;
+  src: url("../fonts/BasierCircle-Medium.ttf");
+  font-weight: 500;
+}
+// fonts end
+
+// def code
+.root{
+  overflow: hidden;
+  max-width: 100vw;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: BasierCircle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+img {
+  max-width: 100%;
+}
+a {
+  transition: all ease 0.25s;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+@media (max-width: 680px) {
+  .remove-onMobile {
+    display: none;
+  }
+}
+@media (min-width: 680px) {
+  .remove-onDesktop {
+    display: none;
+  }
+}
+// def code end
+
+
+.show-item-preview{
+  max-width: 400px;
+  padding: 46px 20px;
+}
+
+img, a, button, .box-type1, .table, .box-type2, .box-type3, .testimonial, .box-type4, .numbers{
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+img:hover, .box-type1:hover, .table:hover, .box-type2:hover, .box-type3:hover, .testimonial:hover, .box-type4:hover, .numbers:hover{
+  opacity: 0.7;
+}
+.list-icon2:hover, .list li .list-icon:hover, .down-underline:hover{
+  opacity: 1;
+  cursor: unset;
+}
+.change-website-slider img:hover{
+  opacity: 1 !important;
+}
+a:hover, button:hover{
+  background-color: #f2d969;
+}
+footer ul li a:hover{
+  color: #f2d969;
+  background-color: transparent;
+}
+footer .soc-m a svg path{
+  transition: all ease 0.5s;
+}
+footer .soc-m a:hover{
+  background-color: transparent;
+  svg{
+    path{
+      fill: #f2d969;
+    }
+  }
+}
+.primary-nav .left a:hover{
+  background: transparent;
+}

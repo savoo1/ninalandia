@@ -1,0 +1,121 @@
+footer{
+    background: #0E1B2E;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    position: relative;
+    overflow: hidden;
+    .footer-img{
+        position: absolute;
+        left: calc(50% + 286px);
+        top: 0;
+    }
+    .wrapper{
+        position: relative;
+        z-index: 2;
+    }
+    .logo{
+        margin-bottom: 20px;
+    }
+    p{
+        color: #FFF;
+        font-family: General Sans Variable;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 21px; /* 131.25% */
+    }
+    h3{
+        color: #FFF;
+        font-family: General Sans Variable;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 21px; /* 116.667% */
+        margin-top: 29px;
+        margin-bottom: 24px;
+    }
+    .soc-m{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        a{
+            display: inline-block;
+            text-decoration: unset;
+        }
+    }
+    .footer-row{
+        display: flex;
+        gap: 130px;
+    }
+    ul{
+        li{
+            margin-bottom: 16px;
+            a{
+                color: #FFF;
+                font-family: Alliance No;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 21px; /* 140% */
+                text-decoration: unset;
+            }
+            h2{
+                color: #FFF;
+                font-family: General Sans Variable;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 21px; /* 105% */
+                padding-bottom: 8px;
+                padding-top: 15px;
+                position: relative;
+            }
+            h2:after{
+                content: "";
+                width: 21px;
+                height: 5px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: #FCC72C;
+            }
+        }
+    }
+    .last-line{
+        margin-top: 36px;
+    }
+}
+
+@media(max-width: 1100px){
+    footer .footer-row{
+        gap: 50px;
+    }
+}
+@media(max-width: 750px){
+    footer .footer-row{
+        flex-direction: column;
+    }
+    footer p{
+        br{
+            display: none;
+        }
+    }
+    footer .footer-img{
+        top: unset;
+        bottom: 140px;
+        width: 372px;
+        left: unset;
+        right: -60px;
+        opacity: 0.3;
+    }
+    footer .last-line{
+        margin-top: 50px;
+    }
+}
+@media(max-width: 410px){
+    footer .footer-img{
+        right: unset;
+        left: 100px;
+    }
+}

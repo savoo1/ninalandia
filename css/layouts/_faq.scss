@@ -1,0 +1,37 @@
+.faq{
+    background: #F2F2F2;
+    padding-top: 101px;
+    padding-bottom: 44px;
+    h2{
+        text-align: center;
+    }
+    .faq-cards{
+        margin: auto;
+        text-align: left;
+        max-width: 775px;
+        margin: auto;
+        margin-top: 26px;
+        h2{
+            text-align: left;
+        }
+        .faq-card:last-child{
+            border-bottom: 0;
+        }
+    }
+}
+
+@media(max-width: 550px){
+    .faq .faq-cards h2{
+        font-size: 18px;
+        font-weight: 600;
+        font-family: General Sans Variable;
+    }
+    .faq-card .question{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .faq{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
