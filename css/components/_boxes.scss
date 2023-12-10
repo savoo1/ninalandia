@@ -104,11 +104,11 @@
         }
         p{
             color: var(--Black, #0A0A0A);
-            font-family: Alliance No;
-            font-size: 17px;
+            font-family: General Sans Variable;
+            font-size: 18px;
             font-style: normal;
-            font-weight: 400;
-            line-height: 30px; /* 176.471% */
+            font-weight: 450;
+            line-height: 28px; /* 155.556% */
             margin-bottom: 19px;
             min-height: 90px;
         }
@@ -132,11 +132,11 @@
             }
             p{
                 color: var(--Black, #0A0A0A);
-                font-family: Alliance No;
+                font-family: General Sans Variable;
                 font-size: 18px;
                 font-style: normal;
-                font-weight: 300;
-                line-height: 30px; /* 166.667% */
+                font-weight: 450;
+                line-height: 28px; /* 155.556% */
                 margin-bottom: 5px;
                 min-height: unset;
             }
@@ -161,7 +161,7 @@
 
     .no{
         position: absolute;
-        bottom: 27px;
+        bottom: 20px;
         left: 0;
         right: 0;
         text-align: center;
@@ -200,11 +200,11 @@
         max-width: 290px;
         color: #4D4D4D;
         text-align: center;
-        font-family: Alliance No;
+        font-family: General Sans Variable;
         font-size: 18px;
         font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        font-weight: 450;
+        line-height: 28px; /* 155.556% */
         min-height: 72px;
     }
 }
@@ -279,5 +279,8 @@
     }
     .box-type2{
         width: calc(50% - 10px);
+    }
+    .box-type4 p{
+        font-size: 16px;
     }
 }

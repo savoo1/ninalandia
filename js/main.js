@@ -61,6 +61,7 @@ $(".testimonials-slider").slick({
         centerMode: true,
         variableWidth: true,
         infinite: true,
+        arrows: true,
       },
     },
   ],

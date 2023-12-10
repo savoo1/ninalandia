@@ -289,7 +289,7 @@ h2 {
   font-size: 36px;
   font-style: normal;
   font-weight: 650;
-  line-height: 144%; /* 144.444% */
+  line-height: 144%;
 }
 h2 .underline {
   position: relative;
@@ -330,7 +330,7 @@ p {
     line-height: 130%;
   }
   p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 23px;
   }
   h3 {
@@ -388,18 +388,24 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: 28px; /* 155.556% */
-    padding: 9px 27px;
+    padding: 9px 9px;
     line-height: 28px;
     width: 100%;
+    width: 100% !important;
+  }
+}
+@media (max-width: 330px) {
+  .primary-button--bigger {
+    font-size: 16px !important;
   }
 }
 .primary-input {
   color: #000;
-  font-family: Alliance No;
-  font-size: 17px;
+  font-family: General Sans Variable;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 30px; /* 176.471% */
+  font-weight: 450;
+  line-height: 28px; /* 155.556% */
   border-radius: 8px;
   background: #FFF;
   padding: 17px 20px 19px;
@@ -556,11 +562,11 @@ button {
 }
 .testimonial .conent p {
   color: var(--Black, #0A0A0A);
-  font-family: Alliance No;
-  font-size: 17px;
+  font-family: General Sans Variable;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 30px; /* 176.471% */
+  font-weight: 450;
+  line-height: 28px; /* 155.556% */
   margin-bottom: 19px;
   min-height: 90px;
 }
@@ -585,11 +591,11 @@ button {
 }
 .testimonial .conent .avatar p {
   color: var(--Black, #0A0A0A);
-  font-family: Alliance No;
+  font-family: General Sans Variable;
   font-size: 18px;
   font-style: normal;
-  font-weight: 300;
-  line-height: 30px; /* 166.667% */
+  font-weight: 450;
+  line-height: 28px; /* 155.556% */
   margin-bottom: 5px;
   min-height: unset;
 }
@@ -611,7 +617,7 @@ button {
 }
 .box-type4 .no {
   position: absolute;
-  bottom: 27px;
+  bottom: 20px;
   left: 0;
   right: 0;
   text-align: center;
@@ -649,11 +655,11 @@ button {
   max-width: 290px;
   color: #4D4D4D;
   text-align: center;
-  font-family: Alliance No;
+  font-family: General Sans Variable;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-weight: 450;
+  line-height: 28px; /* 155.556% */
   min-height: 72px;
 }
 
@@ -726,6 +732,9 @@ button {
   }
   .box-type2 {
     width: calc(50% - 10px);
+  }
+  .box-type4 p {
+    font-size: 16px;
   }
 }
 .table {
@@ -1157,6 +1166,9 @@ button {
   padding-top: 220px;
   padding-bottom: 167px;
 }
+.hero .hero-img-mobile {
+  display: none;
+}
 .hero .hero-img {
   position: absolute;
   top: 134px;
@@ -1232,6 +1244,10 @@ button {
     top: -58px;
   }
   .hero .hero-img {
+    display: none;
+  }
+  .hero .hero-img-mobile {
+    display: block;
     padding-top: 42px;
     position: relative;
     top: unset;
@@ -1241,6 +1257,8 @@ button {
     max-width: 500px;
     width: 100%;
     display: block;
+    max-width: 360px;
+    z-index: 9;
   }
   .hero .wrapper p {
     font-family: General Sans Variable;
@@ -1281,6 +1299,11 @@ button {
     padding-bottom: 30px;
   }
 }
+@media screen and (max-width: 380px) {
+  .hero .hero-img-mobile {
+    margin-right: -15px;
+  }
+}
 @media screen and (max-width: 425px) {
   .hero {
     padding-top: 120px;
@@ -1302,7 +1325,7 @@ button {
     font-style: normal;
     font-weight: 700;
     line-height: 28px; /* 155.556% */
-    padding: 9px 27px;
+    padding: 9px 10px;
     line-height: 28px;
     text-align: center;
   }
@@ -1700,11 +1723,7 @@ button {
     gap: 26px 0;
   }
   .custom-built p {
-    font-family: General Sans Variable;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 550;
-    line-height: 24px; /* 150% */
   }
   .custom-built .more-industries {
     font-size: 20px;
@@ -1898,7 +1917,22 @@ button {
 
 @media (max-width: 1300px) {
   .testimonials .slick-arrow {
-    display: none !important;
+    left: 50%;
+    right: unset;
+    max-width: 50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+  }
+  .testimonials .testimonials-slider {
+    margin-top: 70px;
+  }
+  .testimonials .slick-next {
+    left: calc(50% + 10px);
+  }
+  .testimonials .slick-prev {
+    left: calc(50% - 60px);
   }
   .testimonials .testimonial {
     opacity: 1;
@@ -2066,7 +2100,7 @@ button {
 @media (max-width: 850px) {
   .advantage {
     padding-bottom: 0;
-    background: linear-gradient(180deg, #FEE6ED 1.53%, #FFFCEE 46.5%, #DDECEF 97.47%);
+    background: linear-gradient(90deg, #FEE6ED 1.53%, #FFFCEE 11.02%, #DDECEF 97.47%);
   }
   .advantage .content {
     text-align: center;
@@ -2082,10 +2116,10 @@ button {
     margin-bottom: -130px;
   }
   .advantage .content .box p {
-    text-align: center;
+    text-align: left;
   }
   .advantage .content .box h2 {
-    text-align: center;
+    text-align: left;
   }
   .advantage .content .box ul p {
     text-align: left;
@@ -2098,6 +2132,9 @@ button {
   .advantage {
     padding-top: 50px;
     padding-bottom: 0;
+  }
+  .advantage .content .box p {
+    font-size: 16px;
   }
   .advantage .content .box .list {
     flex-direction: column;
@@ -2148,11 +2185,6 @@ button {
     top: 14px;
     bottom: unset;
     left: unset;
-    font-family: Alliance No;
-    font-size: 160px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     background: linear-gradient(180deg, #DFDFDF 13.1%, rgba(223, 223, 223, 0) 79.56%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -2361,7 +2393,23 @@ button {
 
 @media (max-width: 900px) {
   .how-voolt-can-change-ur-website .change-website-box {
-    display: none;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .how-voolt-can-change-ur-website .change-website-box .numbers {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    min-height: 56px;
+  }
+  .how-voolt-can-change-ur-website .change-website-box .numbers .count {
+    margin: 0;
+    order: 2;
+    font-size: 20px;
   }
   .change-website-slider {
     display: none;
@@ -2513,12 +2561,15 @@ button {
   }
   .voolt-marketing .content .box p {
     margin: auto;
-    text-align: center;
+    text-align: left;
     margin-top: 10px;
   }
   .voolt-marketing .content .box h2 {
-    text-align: center;
+    text-align: left;
     margin-bottom: 15px;
+    max-width: 469px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .voolt-marketing .content .box .list {
     text-align: left;
@@ -2543,6 +2594,11 @@ button {
   }
   .voolt-marketing .content .box .list li .list-icon2 {
     top: 2px;
+  }
+}
+@media (max-width: 550px) {
+  .voolt-marketing .content .box p {
+    font-size: 16px;
   }
 }
 .faq {
@@ -2696,11 +2752,11 @@ footer ul li {
 }
 footer ul li a {
   color: #FFF;
-  font-family: Alliance No;
-  font-size: 15px;
+  font-family: General Sans Variable;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 21px; /* 140% */
+  font-weight: 450;
+  line-height: 20px; /* 142.857% */
   text-decoration: unset;
 }
 footer ul li h2 {

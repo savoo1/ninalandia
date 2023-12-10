@@ -48,8 +48,14 @@ button{
     font-style: normal;
     font-weight: 700;
     line-height: 28px; /* 155.556% */
-    padding: 9px 27px;
+    padding: 9px 9px;
     line-height: 28px;
     width: 100%;
+    width: 100% !important;
+  }
+}
+@media(max-width: 330px){
+  .primary-button--bigger{
+    font-size: 16px !important;
   }
 }

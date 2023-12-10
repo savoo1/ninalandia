@@ -195,8 +195,27 @@
   display: none;
 }
 @media(max-width: 900px){
+  // .how-voolt-can-change-ur-website .change-website-box{
+  //   display: none;
+  // }
   .how-voolt-can-change-ur-website .change-website-box{
-    display: none;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .numbers{
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+      min-height: 56px;
+      .count{
+        margin: 0;
+        order: 2;
+        font-size: 20px;
+      }
+    }
   }
   .change-website-slider{
     display: none;
@@ -253,4 +272,6 @@
   .how-voolt-can-change-ur-website{
     margin-bottom: 0px;
   }
+
 }
+

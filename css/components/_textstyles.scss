@@ -6,6 +6,7 @@ h1{
   font-style: normal;
   font-weight: 650;
   line-height: 128%; /* 128% */
+  
   .yellow-color{
     position: relative;
     .down-underline{
@@ -23,7 +24,7 @@ h2{
   font-size: 36px;
   font-style: normal;
   font-weight: 650;
-  line-height: 144%; /* 144.444% */
+  line-height: 144%;
   .underline{
     position: relative;
     .down-underline{
@@ -60,7 +61,7 @@ p{
     line-height: 130%;
   }
   p{
-    font-size: 14px;
+    font-size: 16px;
     line-height: 23px;
   }
   h3{

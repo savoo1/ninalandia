@@ -67,7 +67,7 @@
 @media(max-width: 850px){
     .advantage{
         padding-bottom: 0;
-        background: linear-gradient(180deg, #FEE6ED 1.53%, #FFFCEE 46.5%, #DDECEF 97.47%);
+        background: linear-gradient(90deg, #FEE6ED 1.53%, #FFFCEE 11.02%, #DDECEF 97.47%);
     }
     .advantage .content{
         text-align: center;
@@ -83,10 +83,10 @@
         margin-bottom: -130px;
     }
     .advantage .content .box p{
-        text-align: center;
+        text-align: left;
     }
     .advantage .content .box h2{
-        text-align: center;
+        text-align: left;
     }
     .advantage .content .box ul p{
         text-align: left;
@@ -100,6 +100,9 @@
     .advantage{
         padding-top: 50px;
         padding-bottom: 0;
+    }
+    .advantage .content .box p{
+        font-size: 16px;
     }
     .advantage .content .box .list{
         flex-direction: column;

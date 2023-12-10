@@ -113,7 +113,23 @@
 
 @media(max-width: 1300px){
   .testimonials .slick-arrow{
-    display: none !important;
+    // display: none !important;
+    left: 50%;
+    right: unset;
+    max-width: 50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+  }
+  .testimonials .testimonials-slider{
+    margin-top: 70px;
+  }
+  .testimonials .slick-next{
+    left: calc(50% + 10px)
+  }
+  .testimonials .slick-prev{
+    left: calc(50% - 60px)
   }
   .testimonials .testimonial{
     opacity: 1;
