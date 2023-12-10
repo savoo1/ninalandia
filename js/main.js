@@ -127,26 +127,6 @@ rev.slick({
   /*infinite: false,*/
 });
 
-var i = 0;
-$(window).scroll(function() {
-  var getg = $(".change-website-box").offset().top - $( window ).height();
-    if ($(this).scrollTop() > getg) { // this refers to window
-      if(i == 0){
-        i = 2;
-        $('.count').each(function () {
-          $(this).prop('Counter',0).animate({
-              Counter: $(this).text()
-          }, {
-              duration: 4000,
-              easing: 'swing',
-              step: function (now) {
-                  $(this).text(Math.ceil(now));
-              }
-          });
-        });
-      }
-  }
-});
 
 
 
