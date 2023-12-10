@@ -1,15 +1,4 @@
-// fonts
-@font-face {
-  font-family: BasierCircle;
-  src: url("../fonts/BasierCircle-Regular.ttf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: BasierCircle;
-  src: url("../fonts/BasierCircle-Medium.ttf");
-  font-weight: 500;
-}
-// fonts end
+
 
 // def code
 .root{
@@ -19,7 +8,6 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: BasierCircle;
 }
 h1,
 h2,

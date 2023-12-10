@@ -1,14 +1,4 @@
 /* imports */
-@font-face {
-  font-family: BasierCircle;
-  src: url("../fonts/BasierCircle-Regular.ttf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: BasierCircle;
-  src: url("../fonts/BasierCircle-Medium.ttf");
-  font-weight: 500;
-}
 .root {
   overflow: hidden;
   max-width: 100vw;
@@ -17,7 +7,6 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: BasierCircle;
 }
 
 h1,
@@ -1592,7 +1581,7 @@ button {
     margin-bottom: 32px;
   }
   .premium-features .premium-features-img {
-    max-width: 550px;
+    max-width: 450px;
     width: 100%;
     left: unset;
     right: unset;
@@ -1600,7 +1589,8 @@ button {
     position: relative;
     margin-top: 20px;
     bottom: unset;
-    margin-bottom: -31px;
+    margin-bottom: -37px;
+    margin-left: calc(100% - 450px);
   }
   .premium-features {
     overflow: unset;
@@ -1608,6 +1598,13 @@ button {
   }
   .premium-features h2 {
     font-size: 26px;
+  }
+}
+@media (max-width: 550px) {
+  .premium-features .premium-features-img {
+    max-width: 320px;
+    margin-left: calc(100% - 320px);
+    margin-bottom: -28px;
   }
 }
 .custom-built {
