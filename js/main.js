@@ -1,13 +1,3 @@
-//navbar
-$(".open-menu").click(function (e) {
-  if ($(this).next().hasClass("show-menu")) {
-    $(this).next().removeClass("show-menu");
-    $(this).removeClass("active-hamburger");
-  } else {
-    $(this).next().addClass("show-menu");
-    $(this).addClass("active-hamburger");
-  }
-});
 //navbar end
 $(".faq-card .question").click(function (e) {
   e.preventDefault();
