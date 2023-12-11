@@ -51,6 +51,15 @@
     }
   }
 }
+@media(max-width: 768px){
+  .how-it-works {
+    background: url("../img/how-it-works-bg-mobile.webp") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
 @media(max-width: 550px){
   .how-it-works .how-it-works-boxes{
     .box-type4{

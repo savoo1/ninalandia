@@ -1,17 +1,4 @@
 //navbar
-$(document).ready(function () {
-  var navbar = $(".primary-nav");
-  var offset = 200;
-
-  $(window).scroll(function () {
-    if (window.scrollY >= offset) {
-      navbar.addClass("sticky");
-    } else {
-      navbar.removeClass("sticky");
-    }
-  });
-});
-
 $(".open-menu").click(function (e) {
   if ($(this).next().hasClass("show-menu")) {
     $(this).next().removeClass("show-menu");
@@ -129,7 +116,19 @@ rev.slick({
 
 
 var i = 0;
-$(window).scroll(function() {
+document.addEventListener('scroll', handleScroll, { passive: true });
+
+function handleScroll(event) {
+  var navbar = $(".primary-nav");
+  var offset = 200;
+
+  $(window).scroll(function () {
+    if (window.scrollY >= offset) {
+      navbar.addClass("sticky");
+    } else {
+      navbar.removeClass("sticky");
+    }
+  });
   var getg = $(".change-website-box").offset().top - $( window ).height();
     if ($(this).scrollTop() > getg) { // this refers to window
       if(i == 0){
@@ -147,7 +146,8 @@ $(window).scroll(function() {
         });
       }
   }
-});
+}
+
 
 $('img, button, .box-type1, .table, .box-type2, box-type3, .testimonial, .box-type4, .numbers').click(function(){
   if(!$(this).hasClass("slick-arrow") && !$(this).hasClass("list-icon2") && !$(this).hasClass("list-icon") && !$(this).hasClass("down-underline")){

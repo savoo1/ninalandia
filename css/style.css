@@ -2101,6 +2101,12 @@ button {
     margin: 0;
   }
 }
+@media (max-width: 768px) {
+  .how-it-works {
+    background: url("../img/how-it-works-bg-mobile.webp") no-repeat center center fixed;
+    background-size: cover;
+  }
+}
 @media (max-width: 550px) {
   .how-it-works .how-it-works-boxes .box-type4 {
     padding: 30px 15px;
