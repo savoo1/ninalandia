@@ -1012,106 +1012,6 @@ button {
   padding: 5px;
 }
 
-.visuallyHidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
-
-.hamburger {
-  margin: 0 auto;
-  margin-top: 0px;
-  width: 30px;
-  height: 30px;
-  position: relative;
-  z-index: 9999;
-  cursor: pointer;
-}
-
-.hamburger .bar {
-  padding: 0;
-  width: 30px;
-  height: 2px;
-  background-color: #000;
-  display: block;
-  transition: all 0.4s ease-in-out;
-  position: absolute;
-}
-
-.bar1 {
-  top: 4px !important;
-}
-
-.bar2,
-.bar3 {
-  top: 10px;
-}
-
-.bar3 {
-  right: 0;
-}
-
-.bar4 {
-  bottom: 0;
-}
-
-/* HAMBURGER 4 */
-.hamburger2 .bar2,
-.hamburger3 .bar3,
-.hamburger4 .bar4 {
-  top: 10px;
-}
-
-.hamburger4 .bar5 {
-  bottom: 12px;
-}
-
-.hamburger4 .bar {
-  transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
-}
-
-.hamburger4 .bar2 {
-  width: 1px;
-  transform: rotate(90deg);
-  left: 13.5px;
-}
-
-.hamburger4 .bar3 {
-  width: 1px;
-  left: 13.5px;
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar1 {
-  top: 13.5px;
-  background-color: transparent;
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar2 {
-  left: 0px;
-  width: 30px;
-  transform: rotate(45deg);
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar3 {
-  left: 0;
-  width: 30px;
-  transform: rotate(-45deg);
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar4 {
-  background-color: transparent;
-}
-
-.checkbox4:checked + label > .hamburger4 > .bar5 {
-  bottom: 13.5px;
-  background-color: transparent;
-}
-
 @media screen and (max-width: 768px) {
   .primary-nav {
     padding-top: 15px;
@@ -1250,7 +1150,7 @@ button {
     z-index: 9;
   }
   .hero .wrapper p {
-    font-family: General Sans Variable;
+    font-family: General Sans Variable, arial;
     font-size: 16px;
     font-style: normal;
     font-weight: 550;
@@ -1262,7 +1162,7 @@ button {
   }
   .hero .wrapper h1 {
     max-width: unset;
-    font-family: General Sans Variable;
+    font-family: General Sans Variable, arial;
     font-size: 28px;
     font-style: normal;
     font-weight: 650;
@@ -1309,7 +1209,7 @@ button {
     margin-left: -10px;
   }
   .hero .primary-button--bigger {
-    font-family: Euclid Circular A;
+    font-family: Euclid Circular A, arial;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
