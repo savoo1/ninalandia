@@ -149,7 +149,7 @@ $(window).scroll(function() {
   }
 });
 
-$('img, button, .box-type1, .table, .box-type2, box-type3, .testimonial, .box-type4, .numbers').click(function(){
+$('img, button, .box-type1, .table, .box-type2, box-type3, .testimonial, .box-type4, .numbers, .hero-img-div').click(function(){
   if(!$(this).hasClass("slick-arrow") && !$(this).hasClass("list-icon2") && !$(this).hasClass("list-icon") && !$(this).hasClass("down-underline")){
     window.location.href='https://app.voolt.com/flow/01/1/';
   }

@@ -63,12 +63,12 @@ ul {
   padding: 46px 20px;
 }
 
-img, a, button, .box-type1, .table, .box-type2, .box-type3, .testimonial, .box-type4, .numbers {
+img, a, button, .box-type1, .table, .box-type2, .box-type3, .testimonial, .box-type4, .numbers, .hero-img-div {
   transition: all ease 0.5s;
   cursor: pointer;
 }
 
-img:hover, .box-type1:hover, .table:hover, .box-type2:hover, .box-type3:hover, .testimonial:hover, .box-type4:hover, .numbers:hover {
+img:hover, .box-type1:hover, .table:hover, .box-type2:hover, .box-type3:hover, .testimonial:hover, .box-type4:hover, .numbers:hover, .hero-img-div:hover {
   opacity: 0.7;
 }
 
