@@ -2103,7 +2103,7 @@ button {
 }
 @media (max-width: 768px) {
   .how-it-works {
-    background: url("../img/how-it-works-bg-mobile.webp") no-repeat center center fixed;
+    background: url("../img/how-it-works-bg-mobile.webp") no-repeat center center;
     background-size: cover;
   }
 }
