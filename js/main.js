@@ -128,26 +128,26 @@ rev.slick({
 });
 
 
-// var i = 0;
-// $(window).scroll(function() {
-//   var getg = $(".change-website-box").offset().top - $( window ).height();
-//     if ($(this).scrollTop() > getg) { // this refers to window
-//       if(i == 0){
-//         i = 2;
-//         $('.count').each(function () {
-//           $(this).prop('Counter',0).animate({
-//               Counter: $(this).text()
-//           }, {
-//               duration: 4000,
-//               easing: 'swing',
-//               step: function (now) {
-//                   $(this).text(Math.ceil(now));
-//               }
-//           });
-//         });
-//       }
-//   }
-// });
+var i = 0;
+$(window).scroll(function() {
+  var getg = $(".change-website-box").offset().top - $( window ).height();
+    if ($(this).scrollTop() > getg) { // this refers to window
+      if(i == 0){
+        i = 2;
+        $('.count').each(function () {
+          $(this).prop('Counter',0).animate({
+              Counter: $(this).text()
+          }, {
+              duration: 4000,
+              easing: 'swing',
+              step: function (now) {
+                  $(this).text(Math.ceil(now));
+              }
+          });
+        });
+      }
+  }
+});
 
 $('img, button, .box-type1, .table, .box-type2, box-type3, .testimonial, .box-type4, .numbers').click(function(){
   if(!$(this).hasClass("slick-arrow") && !$(this).hasClass("list-icon2") && !$(this).hasClass("list-icon") && !$(this).hasClass("down-underline")){
